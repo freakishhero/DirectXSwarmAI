@@ -24,7 +24,7 @@ int messageloop();
 
 LRESULT CALLBACK WndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
 
-/* ShowWindow(HWND hWnd, int nCmdShow);
+/*ShowWindow(HWND hWnd, int nCmdShow);
 
 BOOL UpdateWindow(HWND hWnd);
 
@@ -48,7 +48,6 @@ int WINAPI WinMain(HINSTANCE hInstance,	HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 	messageloop();
 	return 0;
-
 }
 
 bool InitializeWindow(HINSTANCE hInstance, int ShowWnd, int width, int height, bool windowed)
@@ -76,7 +75,7 @@ bool InitializeWindow(HINSTANCE hInstance, int ShowWnd, int width, int height, b
 	wc.hInstance = hInstance;
 	wc.hIcon = LoadIcon(NULL, IDI_HAND);
 	wc.hCursor = LoadCursor(NULL, IDC_HAND);
-	wc.hbrBackground = (HBRUSH)(COLOR_WINDOW + 2);
+	wc.hbrBackground = (HBRUSH)(COLOR_WINDOW + 3);
 	wc.lpszMenuName = NULL;
 	wc.lpszClassName = WndClassName;
 	wc.hIconSm = LoadIcon(NULL, IDI_HAND);
